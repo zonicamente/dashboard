@@ -1,38 +1,83 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: 'regularFont';
+  src: url('./assets/fonts/RuiAbreuBold.otf') format('opentype');
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: 'regularFont', 'Times New Roman', Times, serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100%;
+  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.error {
+  background-color: #FFC7CE;
+  color: #721c24;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.ok {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.table-section {
+  margin-bottom: 20px;
+}
+
+.formatoTabla{
+  background-color: #B7DEE8;
+}
+
+.barraLateral {
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+  width: 65%; /* Ajusta este valor según tu diseño */
+}
+
+.reloj {
+  position: fixed;
+  top: 0;
+  left: 12%; /* Ajusta este valor según tu diseño */
+  right: 0;
+  background-color: white;
+  z-index: 1000;
+  padding: 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+.contPrincipal {
+  height: 100%;
+  padding-top: 130px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: 12%; /* Ajusta este valor según tu diseño */
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  z-index: 4;
+  background-color: white;
 }
 
-.App-link {
-  color: #61dafb;
+@media (max-width: 576px) {
+  .barraLateral {
+    width: 180%;
+    position: sticky;
+  }
+
+  .contPrincipal {
+    margin-left: 0;
+    position: relative;
+  }
+
+  .reloj {
+    margin-left: 10%;
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.table tbody tr:hover {
+  background-color: lightyellow; /* Cambia a cualquier color que desees */
 }
