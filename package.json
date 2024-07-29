@@ -1,7 +1,8 @@
 {
   "name": "dashboard_sapp",
   "version": "0.1.0",
-  "private": true,
+  "private": true,  
+  "homepage": "./",
   "dependencies": {
     "@react-icons/all-files": "^4.1.0",
     "@testing-library/jest-dom": "^5.17.0",
@@ -19,9 +20,7 @@
     "react-scripts": "5.0.1",
     "vertica": "^0.5.5",
     "web-vitals": "^2.1.4"
-  },
-  "homepage": "/dashboard_sapp",
-  "scripts": {
+  },  "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
