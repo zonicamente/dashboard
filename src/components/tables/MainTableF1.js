@@ -2,7 +2,7 @@ import React from 'react';
 import TableSection from './TableSection';
 import { data_f1 } from '../data/data_f1'; // Importa los datos
 
-const MainTable_f1 = ({ fase }) => {
+const MainTableF1 = ({ fase }) => {
   return (
     <div className="container">
       <h1>{fase}</h1>
@@ -39,4 +39,4 @@ const MainTable_f1 = ({ fase }) => {
   );
 };
 
-export default MainTable_f1;
+export default MainTableF1;

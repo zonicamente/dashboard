@@ -20,7 +20,7 @@
     "vertica": "^0.5.5",
     "web-vitals": "^2.1.4"
   },
-  "homepage": "/myapp",
+  "homepage": "/dashboard_sapp",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Tab, Tabs } from 'react-bootstrap';
-import MainTable_f2 from '../components/tables/MainTable_f2';
+import MainTableF2 from '../components/tables/MainTableF2';
 
 
 const Etapa2 = () => {
@@ -10,7 +10,7 @@ const Etapa2 = () => {
             <Tabs defaultActiveKey="tab1" id="uncontrolled-tab-example" className="mb-3">
                 <Tab eventKey="tab1" title="Resumen">
                     <div>
-                        <MainTable_f2 fase='Fase 02'/>
+                        <MainTableF2 fase='Fase 02'/>
                     </div>
                 </Tab>
                 <Tab eventKey="tab2" title="Detalle">

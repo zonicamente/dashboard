@@ -40,7 +40,7 @@ const data = [
   // Agrega más datos según sea necesario
 ];
 
-const MainTable_f2 = () => {
+const MainTableF2 = () => {
   return (
     <div className="container">
       <h1>FASE 02</h1>
@@ -50,4 +50,4 @@ const MainTable_f2 = () => {
   );
 };
 
-export default MainTable_f2;
+export default MainTableF2;
